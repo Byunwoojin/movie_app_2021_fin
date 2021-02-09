@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -39,7 +39,8 @@
     ]
   },
   "devDependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "react-router-dom": "^5.2.0"
   },
-  "homepage" : "https://Byunwoojin.github.io/React_day4/"
+  "homepage": "https://Byunwoojin.github.io/react_day4/"
 }
