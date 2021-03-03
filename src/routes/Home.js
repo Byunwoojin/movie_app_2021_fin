@@ -10,6 +10,7 @@ class Home extends React.Component{
     };
     getMovies = async () => {
         const {data: {data: {movies}}} = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
+        console.log(movies);
         this.setState({movies, isLoading:false});
 
     }
@@ -36,6 +37,9 @@ class Home extends React.Component{
                                 summary={movie.summary}
                                 poster={movie.medium_cover_image}
                                 genres={movie.genres}
+                                rating={movie.rating}
+                                runtime={movie.runtime}
+                                url={movie.url}
                             />
                         ))}
                     </div>
